@@ -3,7 +3,7 @@
 	<info>
 		<name>Midgard Hero's Handbook</name>
 		<description>The Midgard Hero's Handbook is the reference for this content.</description>
-		<author url="https://roll20.net/compendium/dnd5e/Midgard%20Heroes%20Handbook#content"><KP></author>
+		<author url="https://roll20.net/compendium/dnd5e/Midgard%20Heroes%20Handbook#content">Kobold Press</author>
         <update version="0.0.0">
             <!-- source file tba --> <file name="source.xml" url="https://raw.githubusercontent.com/InspectorGooby/Aurora/new/main/Midgard Heores Handbook/MHH.index>
             <!-- races -->
