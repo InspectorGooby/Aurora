@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mountain's Witness</name>
+		<description>Mountain's Witness Background</description>
+		<author url="https://roll20.net/compendium/dnd5e/Mountain%27s%20Witness#h-Mountain%27s%20Witness">Midgard Heroes Handbook</author>
+	</info>
+
+	<element name="Moutain's Witness" type="Background" source="Midgard Heroes Handbook" id="ID_BACKGROUND_MOUNTAIN'S_WITNESS">
+		<description>
+			<p>Dontrona Mountain, Sable Mountain, Demon Mountain; call it what you will, this spire of Mystery and Infernal plots looms large on both the horizon and in the dreams of Rothenians. You know more than most of this place, for you have made a bargain with its masters.</p>
+			<p class="indent">Choose a god, a pantheon of gods, or some other quasi-divine being, and work with your DM to detail the nature of your religious service. Were you a lesser functionary in a temple, raised from childhood to assist the priests in the sacred rites? Or were you a high priest who suddenly experienced a call to serve your god in a different way? Perhaps you were the leader of a small cult outside of any established temple structure, or even an occult group that served a fiendish master that you now deny.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Deception, Persuasion</li>
+				<li><strong>Languages:</strong>Infernal</li>
+				<li><strong>Equipment:</strong>Varies (see the Bargain feature)</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_BARGAIN" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Acolytes are shaped by their experience in temples or other religious communities. Their study of the history and tenets of their faith and their relationships to temples, shrines, or hierarchies affect their mannerisms and ideals. Their flaws might be some hidden hypocrisy or heretical idea, or an ideal or bond taken to an extreme.</p>
+		</description>
+		<setters>
+			<set name="short">Deception, Persuasion, Infernal</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Language" name="Language (Acolyte)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_BARGIN" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Personality Trait" number="2">
+				<item id="1">I am confident and content.</item>
+				<item id="2">The bargain has made me paranoid.</item>
+				<item id="3">I love to see new things and meet new people.</item>
+				<item id="4">I have no problem lying to others.</item>
+				<item id="5">I love spending money.</item>
+				<item id="6">I show my teeth when I smile.</item>			</select>
+			<select type="List" name="Ideal">
+				<item id="1">Power. All that matters is growing your influence. (Evil)</item>
+				<item id="2">Results. If in the end your task is accomplished, why be concerned with your method. (Chaotic)</item>
+				<item id="3">Service. I perform important work for those above me. This service is its own reward (Lawful)</item>
+				<item id="4">Wealth. Money moves mountains. (any)</item>
+				<item id="5">Bridge. I have sacrificed my privacy so that dark powers might be transformed by seeing beauty and love. (Good)</item>
+				<item id="6">Knowledge. Knowledge is the only true resource; I must give it to receive it. (Any)</item>
+			</select>
+			<select type="List" name="Bond">
+				<item id="1">I will do my time, then reap my reward.</item>
+				<item id="2">This Cursed bargain must be revoked by any means neccessary.</item>
+				<item id="3">I will see the world, meet with queens, slay my enemies, and be judged worthy of a place on the Mountain.</item>
+				<item id="4">I must slay the creature I made this bargain with.</item>
+				<item id="5">Demon Mountain wil fall, and my baragin is a neccessary price to get close to its rulers.</item>
+				<item id="6">I will deceive another creature into replacing me in this bargain.</item>
+			</select>
+			<select type="List" name="Flaw">
+				<item id="1">When my patron watches through me, I grow bitter and cruel.</item>
+				<item id="2">I cannot rest properly for a day after being an active witness.</item>
+				<item id="3">Visions of the Eleven Hells appear before me at inopportune times..</item>
+				<item id="4">If I let someone too close, they will discover my Secret.</item>
+				<item id="5">I am terrible with money.</item>
+				<item id="6">I seek greater and greater danger to impress my patron.</item>
+			</select>
+		</rules>
+	</element>
+	
+	<element name="Feature: Bargain" type="Background Feature" source="Midgard Hero Player's Handbook" id="ID_BACKGROUND_FEATURE_BARGAIN">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have made a contract with one of the demonic children of the Master. They may see and hear through you as though you were a familiar. This observation comes and goes depending on the patron. You are aware of when your Actions are being monitored, but others are not. Your patron's observation of your life is magical and can be detected by Spells such as Detect Magic while it’s occurring. The observation only functions on The Material Plane. As a reward for being a witness, you are paid 25 gp per month for each level of experience you’ve gained. You start your Adventuring career with either:.</p>
+			<li><strong> A sustained comfortable lifestyle, a furnished home, two sets of noble's clothes, and 50 gp stored in a chest, </strong></li>
+			<p>OR</p>
+			<li>A Riding Horse with saddle, an Explorer's Pack, a set of traveler’s clothes, and a belt pouch containing 25 gp.</li>
+		</description>
+		<sheet alt="Mountain's Witness" />
+	</element>
+</elements>
